@@ -20,59 +20,83 @@ This dataset is from the National Transportation Safety Board that includes avia
 It has 31 attributes and 88889 entries.Entries contain details of accidents that have occured with a range of year. The entry data ranges from the make and model of the aircrafts to the injuries of the passagers and the location the accidents happened.
 ## Data Importation
 ### import libraries
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import style
 import seaborn as sns
 %matplotlib inline
+```
 ### Loading the Dataset
+```python
 df = pd.read_csv('AviationData.csv', encoding=('ISO-8859-1'), low_memory=False )
+```
 ### Previewing the top of our dataset
+```python
 df.head()
+```
 ### Previewing the bottom of our dataset
+```python
 df.tail()
+```
 ### Checking whether each column has an appropriate datatype
+```python
 df.info()
+```
 ## Data Cleaning
 ### Accessing data with only Airplanes
+```python
 df = df.loc[df['Aircraft.Category']=='Airplane', :]
+```
 ### Creating a dataframe of recommended data
+```python
 df = df.loc[:,['Event.Id','Event.Date','Make', 'Model','Purpose.of.flight']]
+```
 ### Checking for Missing data
+```python
 df.isna().sum()
+```
 ### Dealing with the Missing Data
+```python
 df = df.dropna()
+```
 ### Checking For Duplicates
+```python
 df.duplicated().sum()
+```
 ### Dealing with Duplicates
+```python
 df = df.drop_duplicates()
-df
-
+```
 ## Exploratory Data Analysis
 ### Identifying the number of accidents each airplane make happened
+```python
 names = df['Make'].value_counts().head(7).keys()
 names_value = df['Make'].value_counts().head(7)  
-
+```
 ### Plotting a bar graph to visualize the data
+```python
 style.use('ggplot')
 plt.bar(names, names_value, color = 'blue', width=0.5)
 plt.xlabel('Top Airplane Makes')
 plt.ylabel('Number of Accidents')
 plt.title('Number of Accidents per Top Airplane Make')
-
+```
 ### Identifying the purpose of the airplane when the accidents occured
+```python
 purpose = df['Purpose.of.flight'].value_counts().head().keys()
 purpose_value = df['Purpose.of.flight'].value_counts().head()
-
+```
 ### Plotting a bar graph to visualize the data
+```python
 style.use('ggplot')
 plt.figure(figsize=(10,5))
 plt.bar(purpose, purpose_value, color = 'red', width=0.5)
 plt.xlabel('Top Airplane Makes')
 plt.ylabel('Number of Accidents')
 plt.title('Purpose of the Airplanes')
-
+```
 
 ## Conclusion
 In this section, the aim is to summarize the finding from the analysis.
