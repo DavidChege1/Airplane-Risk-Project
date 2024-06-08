@@ -4,11 +4,11 @@ In this project, we're going to perform an Exploratory Data Analysis of the Nati
 - [@DavidChege1](https://github.com/DavidChege1)
 ## Acknowledgements
 This dataset is provided from:
-- [kaggle.com](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses)
+- [Link : kaggle.com](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses)
 ## Tableau Dashboard
-- [@ David Chege](https://public.tableau.com/views/MyPhase1Project/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+- [link : @David Chege](https://public.tableau.com/views/MyPhase1Project/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 ## Project Slides
-- [Canvas](https://www.canva.com/design/DAGHPtuQ_Dg/cBZv77g4M2AL3Vxywn8xyw/edit?utm_content=DAGHPtuQ_Dg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Link : Canvas](https://www.canva.com/design/DAGHPtuQ_Dg/cBZv77g4M2AL3Vxywn8xyw/edit?utm_content=DAGHPtuQ_Dg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ## Business Understanding
 The company is expanding in to new business industries to diversify its portfolio. They are interested in purchasing and operating airplanes for commercial and private enterprises, but do not know anything about the potential risks of aircraft. They require information to assits them in determining which Airplanes are the lowest risk for the company to start this new business endeavor.
 ## Objective
